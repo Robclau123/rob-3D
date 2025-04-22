@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rover cu senzor ultrasonic - Rob3D</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS personalizat -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-transparent.png" alt="Rob3D Logo" style="margin-left: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="proiecte-arduino.html">Proiecte</a></li>
+          <li class="nav-item"><a class="nav-link" href="3D.html">Printare 3D</a></li>
+          <li class="nav-item"><a class="nav-link" href="cercetare-carte.html">Cercetare</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <section class="story-section">
+      <div class="text-box">
+      <h2>IoT + DHT</h2>
+        <p>
+          În cadrul acestui proiect, am utilizat un microcontroller ESP, cunoscut pentru capacitățile sale de conectivitate Wi-Fi, împreună cu un senzor DHT (DHT11 sau DHT22, în funcție de varianta aleasă), care măsoară temperatura și umiditatea din mediu. Senzorul DHT este ideal pentru aplicații de monitorizare a condițiilor atmosferice, oferind valori precise într-un interval larg de temperaturi și umidități.
+
+          Scopul acestui proiect a fost de a crea un sistem simplu și eficient de monitorizare a temperaturii și umidității, care să poată fi integrat într-o rețea locală, permițând vizualizarea datelor în timp real pe o pagină web. Circuitul a fost montat pe un breadboard pentru ușurința prototipurilor și conectat la microcontrollerul ESP, care asigură procesarea și transmiterea datelor.
+          
+          Acest proiect reprezintă o aplicație practică a senzorilor și microcontrolerelor în domeniul Internetului Lucrurilor (IoT), demonstrând cum tehnologia poate fi folosită pentru a colecta și analiza date din mediu într-un mod accesibil și eficient.</p>
+      </div>
+      </div>
+    </section>
+
+    <section id="galerie" class="gallery-section">
+      <div class="container">
+        <h2 class="text-center mb-4">Galerie proiect</h2>
+        <div class="row justify-content-center">
+          <!-- Imagine 1 -->
+          <div class="col-md-4 col-sm-6 mb-4 text-center">
+            <img src="images/humid_project.jpg" class="img-fluid rounded shadow" style="width: 250px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal1">
+          </div>
+    
+          <!-- Imagine 2 -->
+          <div class="col-md-4 col-sm-6 mb-4 text-center">
+            <img src="images/humid_project2.jpg" class="img-fluid rounded shadow" style="width: 250px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal2">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Modal pentru Imaginea 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label">Garlerie 1</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="images/humid_project.jpg" class="img-fluid" style="max-width: 90%; max-height: 80vh;">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal pentru Imaginea 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label">Galerie 2</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="images/humid_project2.jpg" class="img-fluid" style="max-width: 90%; max-height: 80vh;">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- FOOTER -->
+  <footer class="site-footer mt-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 contact-info">
+          <h5>Contact</h5>
+          <p>Email: rob.3d@yahoo.com</p>
+          <p>Oradea, România</p>
+        </div>
+        
+        <div class="col-md-6 social-media">
+          <h5>Social Media</h5>
+          <p>
+            <a href="https://www.tiktok.com/@rob.3d" target="_blank">
+              <i class="fab fa-tiktok"></i> TikTok
+            </a> |
+            <a href="https://www.instagram.com/rob__3d" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-3">
+        &copy; 2025 Rob3D. Toate drepturile rezervate.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

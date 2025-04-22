@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rob3D - Printare 3D</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Fișierul tău CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-transparent.png" alt="Rob3D Logo" style="margin-left: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="proiecte-arduino.html">Proiecte</a></li>
+          <li class="nav-item"><a class="nav-link" href="3D.html">Printare 3D</a></li>
+          <li class="nav-item"><a class="nav-link" href="cercetare-carte.html">Cercetare</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Povestea mea -->
+  <section class="story-section">
+    <div class="text-box">
+      <h2>Povestea mea</h2>
+      <p>Totul a început cu dorința de a crea lucruri personalizate, pe care să le folosesc în proiectele mele 3D cu Arduino, dar și de a construi o mică afacere. Imprimantele 3D mi-au oferit ocazia de a aduce la viață idei care altfel păreau imposibile. În primele luni însă, nu a fost deloc ușor. Eram începător și întâmpinam o mulțime de dificultăți – calibrarea imprimantei era o provocare constantă, nu reușeam să găsesc temperatura ideală și de multe ori se bloca filamentul, ceea ce mă frustra. Totuși, am perseverat și am învățat din fiecare greșeală, iar acum am învățat cum să stăpânesc procesul de printare.</p>
+      <p>Am început să îmi caut inspirație pe platforme precum Thingiverse și MakerWorld, dar mi-am folosit și cunoștințele minime de Fusion 360 pentru a crea modele proprii. Astfel, am ajuns să realizez o varietate de produse personalizate, de la carcase pentru proiectele mele, până la accesorii pentru alții. Fiecare proiect adus la viață prin printare 3D a fost o oportunitate de a învăța și de a mă dezvolta profesional.</p>
+      <p>Reacțiile celor care au primit lucruri personalizate au fost incredibile. Le plăceau foarte mult, iar satisfacția lor era ca a unui copil care primește o jucărie nouă. Aceste reacții m-au încurajat și mi-au dat încrederea că pot face ceva mare din această pasiune. Mă văd în viitor lucrând cu firme mari, oferind produse de calitate superioară, cu un filament durabil și rezistent, pentru a le aduce beneficii semnificative în producție. Nu mă zgârcesc când vine vorba de calitate, pentru că știu că doar așa îmi pot construi o reputație solidă.</p>
+      <p>Printarea 3D nu este doar o pasiune, este calea mea către inovație și dezvoltare personală. Mă simt motivat și inspirat să continui să explorez noi idei și să duc această tehnologie la următorul nivel.</p>
+
+      <div class="learn-more-btn-container">
+        <a href="#proiecte" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie imagini -->
+  <section id="galerie" class="gallery-section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Galerie proiect</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="images/stand2_ps5.jpg" class="img-fluid rounded shadow gallery-image" alt="Proiect 1" style="width: 250px; cursor: pointer;">
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="images/stand_ps5.jpg" class="img-fluid rounded shadow gallery-image" alt="Proiect 2" style="width: 250px; cursor: pointer;">
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="images/christmas_ornament.jpg" class="img-fluid rounded shadow gallery-image" alt="Descriere" style="width: 250px; cursor: pointer;">
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="images/figures_transparent.jpg" class="img-fluid rounded shadow gallery-image" alt="Descriere" style="width: 250px; cursor: pointer;">
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="images/poro.jpg" class="img-fluid rounded shadow gallery-image" alt="Descriere" style="width: 250px; cursor: pointer;">
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="images/paint_lol.jpg" class="img-fluid rounded shadow gallery-image" alt="Descriere" style="width: 250px; cursor: pointer;">
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="images/tengen_sword.jpg" class="img-fluid rounded shadow gallery-image" alt="Descriere" style="width: 250px; cursor: pointer;">
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="images/kurama_transparent.jpg" class="img-fluid rounded shadow gallery-image" alt="Descriere" style="width: 250px; cursor: pointer;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal general pentru toate imaginile -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Închide"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" class="img-fluid rounded" style="max-height: 80vh;" alt="Imagine mărită">
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="proiecte" class="projects-section">
+    <div class="project" id="proiecte-arduino">
+      <p>
+        Pentru a descoperi mai multe despre proiectele mele de printare 3D și creațiile unice pe care le realizez, urmează-mă pe TikTok! Găsește acolo toate detaliile și procesul din spatele fiecărei piese 3D. Intră acum și inspiră-te din lumea printării 3D!</p>
+      <div class="learn-more-btn-container">
+        <a href="https://www.tiktok.com/@rob.3d" class="learn-more-btn">TikTok</a>
+      </div>
+    </div>
+  </section>    
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-info">
+          <h5>Contact</h5>
+          <p>Email: rob.3d@yahoo.com</p>
+          <p>Oradea, România</p>
+        </div>
+        <div class="social-media">
+          <h5>Social Media</h5>
+          <p>
+            <a href="https://www.tiktok.com/@rob.3d" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a> |
+            <a href="https://www.instagram.com/rob__3d" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+          </p>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Rob3D. Toate drepturile rezervate.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script pentru galerie -->
+  <script>
+    document.querySelectorAll('.gallery-image').forEach(img => {
+      img.addEventListener('click', () => {
+        document.getElementById('modalImage').src = img.src;
+        new bootstrap.Modal(document.getElementById('imageModal')).show();
+      });
+    });
+  </script>
+
+</body>
+</html>

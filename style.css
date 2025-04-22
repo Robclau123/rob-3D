@@ -1,0 +1,262 @@
+/* Navbar cu turcoaz */
+.navbar {
+  background-color: #038C8C !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Asigură-te că navbar-ul rămâne deasupra altor elemente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adaugă o umbră subtilă pentru navbar */
+}
+
+/* Adaugă padding în partea de sus a body-ului pentru a face loc navbar-ului */
+body {
+  padding-top: 80px; /* Ajustează această valoare în funcție de înălțimea navbar-ului */
+  margin: 0;
+  background-color: #ffffff;
+  color: #1D1D1D;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Logo puțin mai mare */
+.navbar-brand img {
+  height: 80px;
+}
+
+/* Asigură-te că navbar-ul folosește toată lățimea și alinierea corectă */
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Link-uri albe în navbar */
+.navbar .nav-link {
+  color: #ffffff !important;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Hover - schimbă culoarea textului și fundalul */
+.navbar .nav-link:hover {
+  background-color: #F6C106;
+  color: #1D1D1D !important;
+  transform: scale(1.1);
+}
+
+/* Buton hamburger pe mobil (culoare albă) */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Secțiunea Povestea Mea */
+.story-section {
+  background-color: #f2f2f2;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px 20px 20px;
+}
+
+/* Containerul pentru poveste */
+.text-box {
+  text-align: center;
+  background-color: white;
+  padding: 40px;
+  max-width: 800px;
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+}
+
+/* Stiluri pentru titlu */
+.text-box h2 {
+  font-size: 2rem;
+  color: #038C8C;
+  margin-bottom: 20px;
+}
+
+/* Stiluri pentru paragrafe */
+.text-box p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Buton pentru a afla mai multe */
+.overlay-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.overlay-button .btn {
+  background-color: #038C8C;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.overlay-button .btn:hover {
+  background-color: #F6C106;
+  color: #1D1D1D;
+}
+
+/* Buton "Află mai multe" */
+.learn-more-btn-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.learn-more-btn {
+  background-color: #038C8C;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #F6C106;
+  color: #1D1D1D;
+  transform: scale(1.05);
+}
+
+/* Secțiune de proiecte */
+.projects-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 40px 40px 40px;
+  background-color: #f2f2f2;
+  margin-bottom: 0;
+}
+
+/* Fiecare proiect */
+.project {
+  background-color: white;
+  padding: 30px;
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding-bottom: 25px;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: #038C8C;
+  margin-bottom: 20px;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Adăugarea butonului în secțiunile de proiecte */
+.project .learn-more-btn-container {
+  margin-top: 15px;
+}
+
+.project .learn-more-btn {
+  background-color: #038C8C;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project .learn-more-btn:hover {
+  background-color: #F6C106;
+  color: #1D1D1D;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.site-footer {
+  background-color: #038C8C !important;
+  color: white;
+  padding: 40px 20px 20px 20px;
+  margin-top: 0;
+}
+
+.site-footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.site-footer p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.site-footer a {
+  color: #F6C106;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.site-footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.site-footer .contact-info,
+.site-footer .social-media {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.site-footer .copyright {
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+}
+
+/* Container personalizat pentru a limita lățimea */
+.custom-container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}

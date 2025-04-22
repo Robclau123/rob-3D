@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proiecte Arduino - Rob3D</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS personalizat -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-transparent.png" alt="Rob3D Logo" style="margin-left: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="proiecte-arduino.html">Proiecte</a></li>
+          <li class="nav-item"><a class="nav-link" href="3D.html">Printare 3D</a></li>
+          <li class="nav-item"><a class="nav-link" href="cercetare-carte.html">Cercetare</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Secțiune Introducere -->
+  <section class="story-section">
+    <div class="text-box">
+      <p>
+        De-a lungul anilor, am realizat diverse proiecte interesante folosind plăci Arduino. Din păcate, unele dintre ele nu au fost documentate la nivel vizual așa cum mi-aș fi dorit, iar video-urile și pozele nu sunt întotdeauna cele mai clare. Totuși, fiecare dintre aceste proiecte m-a ajutat să învăț mai multe despre electronica și programarea microcontrolerelor. 
+      </p>
+      <p>
+        Aceste proiecte sunt doar câteva dintre realizările mele, iar de-a lungul lor am învățat cum să combin tehnologiile, să găsesc soluții creative și să transform ideile în realitate. Mai multe informații despre procesul meu de învățare și despre ce am reușit să construiesc pot fi găsite în secțiunea de mai jos. 
+      </p>
+      <!-- Butonul pentru "Află mai multe" -->
+      <div class="learn-more-btn-container">
+        <a href="#proiecte" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="proiecte" class="projects-section">
+    <div class="project" id="proiecte-arduino">
+      <h3>Rover cu senzor ultrasonic</h3>
+      <p>
+        Proiectul meu de rover care evită obstacole folosind un senzor ultrasonic. Un exemplu de integrare a Arduino în roboti autonomi.
+      </p>
+      <div class="learn-more-btn-container">
+        <a href="rover_ultrasonic.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+  
+    <div class="project" id="printare-3d">
+      <h3>Rover cu senzor infrarosu</h3>
+      <p>
+        Un alt rover care evită obstacole, dar de data aceasta folosind un senzor infrarosu pentru detecția acestora.
+      </p>
+      <div class="learn-more-btn-container">
+        <a href="rover_IR.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+  
+    <div class="project" id="cercetari-carti">
+      <h3>Cub LED 4x4x4</h3>
+      <p>
+        Am construit un cub LED 4x4x4 care blink-uieste în funcție de un cod specific, o combinație între programare și hardware.
+      </p>
+      <div class="learn-more-btn-container">
+        <a href="cub_led.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+
+    <div class="project" id="cercetari-carti">
+      <h3>FixBot – robotul din fixativ și sonerie</h3>
+      <p>
+        Primul meu proiect – un robot creat dintr-o sonerie și un capac de fixativ, care cântă atunci când intră în contact cu apa.
+      </p>
+      <div class="learn-more-btn-container">
+        <a href="fixbot.html  " class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+
+    <div class="project" id="cercetari-carti">
+      <h3>Dispozitiv de măsurare a temperaturii</h3>
+      <p>
+        Un dispozitiv de măsurare a temperaturii care afișează valorile pe o pagină web, folosind un senzor DHT și un microcontroller ESP.
+      </p>
+      <div class="learn-more-btn-container">
+        <a href="humid_project.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+
+    <div class="project" id="cercetari-carti">
+      <h3>Proiecte HV (High Voltage)</h3>
+      <p>
+        Două proiecte high-voltage: unul cu o componentă de 15kV dintr-o mașină și altul cu un transformator de TV vechi, cu valori estimate între 10-20kV.
+      </p>
+      <div class="learn-more-btn-container">
+        <a href="HV.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+
+    <div class="project" id="cercetari-carti">
+      <h3>Robotelul Otto</h3>
+      <p>
+        Otto este un robot biped programabil, imprimat 3D, conceput pentru a învăța noțiuni de bază de robotică și programare. L-am asamblat și programat să meargă înainte și înapoi, iar atunci când detectează un obstacol în fața lui, se oprește automat. Este un proiect distractiv și educativ, ideal pentru oricine vrea să pătrundă în lumea roboticii.</p>
+      <div class="learn-more-btn-container">
+        <a href="robot-otto.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+
+    <div class="project" id="proiecte-arduino">
+      <h3>Mașină Line Follower</h3>
+      <p>
+        Am realizat o mașină care urmează automat o linie trasată pe sol, folosind senzori de detecție a contrastului și un microcontroller Arduino. Proiectul combină electronică, programare și un șasiu personalizat imprimat 3D, oferind o demonstrație simplă și eficientă a navigației autonome.</p>
+      <div class="learn-more-btn-container">
+        <a href="line-follower1.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+
+    <div class="project" id="proiecte-arduino">
+      <h3>Mașină Line Follower 2</h3>
+      <p>
+        Am realizat o mașină care urmează automat o linie trasată pe sol, folosind senzori de detecție a contrastului și un microcontroller Arduino. Proiectul combină electronică, programare și un șasiu personalizat imprimat 3D, oferind o demonstrație simplă și eficientă a navigației autonome.</p>
+      <div class="learn-more-btn-container">
+        <a href="line-follower2.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+
+    <div class="project" id="proiecte-arduino">
+      <h3>Control LED prin IP folosind o placă ESP</h3>
+      <p>
+        Acest proiect utilizează o placă ESP pentru a controla un LED printr-o adresă IP. Folosind un tranzistor, LED-ul poate fi aprins sau stins de la distanță, printr-o interfață web. Placa ESP se conectează la rețea și permite utilizatorului să controleze LED-ul din orice loc, folosind doar un browser web și o adresă IP.
+      </p>
+      <div class="learn-more-btn-container">
+        <a href="site-led.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+
+    <div class="project" id="proiecte-arduino">
+      <h3>Control LED prin Telecomandă IR cu Arduino</h3>
+      <p>
+        În acest proiect, am folosit un Arduino și un receptor IR pentru a controla un LED printr-o telecomandă. Când se apasă un buton de pe telecomandă, semnalul IR este recepționat de Arduino, care aprinde sau stinge LED-ul în funcție de comanda primită. Acest proiect simplu demonstrează utilizarea telecomenzii IR pentru controlul de la distanță al dispozitivelor electrice.</p>
+      <div class="learn-more-btn-container">
+        <a href="telecomanda-led.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+
+    <div class="project" id="proiecte-arduino">
+      <h3>Motor Ionic</h3>
+      <p>
+        Am realizat un motor ionic folosind un șasiu imprimat 3D, o foaie groasă de cupru și un fir subțire de cupru. Alimentat la aproximativ 20.000V, motorul generează o mișcare liniară a ionilor între cele două bare de cupru, ilustrând un principiu interesant de propulsie electrică.
+</p>
+      <div class="learn-more-btn-container">
+        <a href="motor-ionic.html" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+
+</section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-info">
+          <h5>Contact</h5>
+          <p>Email: rob.3d@yahoo.com</p>
+          <p>Oradea, România</p>
+        </div>
+        
+        <div class="social-media">
+          <h5>Social Media</h5>
+          <p>
+            <a href="https://www.tiktok.com/@rob.3d" target="_blank">
+              <i class="fab fa-tiktok"></i> TikTok
+            </a> |
+            <a href="https://www.instagram.com/rob__3d" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; 2025 Rob3D. Toate drepturile rezervate.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

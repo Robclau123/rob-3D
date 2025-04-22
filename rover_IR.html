@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rover cu senzor ultrasonic - Rob3D</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS personalizat -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-transparent.png" alt="Rob3D Logo" style="margin-left: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="proiecte-arduino.html">Proiecte</a></li>
+          <li class="nav-item"><a class="nav-link" href="3D.html">Printare 3D</a></li>
+          <li class="nav-item"><a class="nav-link" href="cercetare-carte.html">Cercetare</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+    <section class="story-section">
+      <div class="text-box">
+      <h2>Rover cu senzor infrarosu</h2>
+        <p>
+          Un alt pas în explorarea roboticii DIY! Acest rover este proiectat pentru a evita obstacole folosind un senzor infraroșu (IR), detectând obiectele din fața sa și ajustându-și automat direcția. La baza sistemului stă un <strong>Arduino Uno</strong>, care controlează mișcările roverului printr-o <strong>punte H duală L298N</strong>, perfectă pentru coordonarea celor doi <strong>motoare DC</strong> din șasiul echipat din kit-ul de la arduino. Alimentarea este asigurată de un pachet de <strong>9 baterii de 1.5V</strong>, oferind suficientă putere pentru mișcare fluidă și reacții rapide.
+  
+          Acest mic robot este ideal pentru începători pasionați de electronică, automatizări și inteligență ambientală, oferind o demonstrație clară a modului în care senzorii pot ghida dispozitive autonome în lumea reală.
+        </div>
+      </div>
+    </section>
+
+    <section id="galerie" class="gallery-section">
+      <div class="container">
+        <h2 class="text-center mb-4">Video Rover cu senzor infrarosu</h2>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="gallery-item text-center">
+              <video style="width: 300px;" controls class="rounded-3 shadow">
+                <source src="video/rover-IR.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  <!-- FOOTER -->
+  <footer class="site-footer mt-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 contact-info">
+          <h5>Contact</h5>
+          <p>Email: rob.3d@yahoo.com</p>
+          <p>Oradea, România</p>
+        </div>
+        
+        <div class="col-md-6 social-media">
+          <h5>Social Media</h5>
+          <p>
+            <a href="https://www.tiktok.com/@rob.3d" target="_blank">
+              <i class="fab fa-tiktok"></i> TikTok
+            </a> |
+            <a href="https://www.instagram.com/rob__3d" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-3">
+        &copy; 2025 Rob3D. Toate drepturile rezervate.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

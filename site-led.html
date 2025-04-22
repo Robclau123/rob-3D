@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Control LED prin IP folosind o placă ESP</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS personalizat -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-transparent.png" alt="Rob3D Logo" style="margin-left: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="proiecte-arduino.html">Proiecte</a></li>
+          <li class="nav-item"><a class="nav-link" href="3D.html">Printare 3D</a></li>
+          <li class="nav-item"><a class="nav-link" href="cercetare-carte.html">Cercetare</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <section class="story-section">
+      <div class="text-box">
+      <section id="control-led" class="project-description">
+        <div class="container">
+          <h2 class="text-center mb-4">Control LED prin IP folosind o placă ESP</h2>
+          <p>În acest proiect, am folosit o placă ESP (de exemplu, ESP8266 sau ESP32) pentru a controla un LED de la distanță printr-o adresă IP dedicată. Placa ESP se conectează la rețeaua Wi-Fi și creează o interfață simplă care poate fi accesată dintr-un browser web. În acest mod, utilizatorul poate aprinde sau stinge LED-ul, având control total asupra acestuia, fără a fi nevoie de o conexiune fizică continuă.</p>
+      
+          <h3>Componente utilizate:</h3>
+          <ul>
+            <li><strong>Placă ESP (ESP8266 sau ESP32):</strong> Se ocupă cu conectarea la rețea și gestionarea semnalului.</li>
+            <li><strong>LED:</strong> Componenta care este controlată prin activarea sau dezactivarea sa.</li>
+            <li><strong>Tranzistor:</strong> Acționează ca un comutator pentru a controla curentul care trece prin LED, protejând astfel placa ESP de eventuale suprasarcini.</li>
+            <li><strong>Rețea Wi-Fi:</strong> Permite comunicarea între placa ESP și dispozitivele externe, precum un laptop sau telefon, printr-o adresă IP.</li>
+            <li><strong>Interfață Web:</strong> O pagină web simplă care poate fi accesată din orice browser, care permite utilizatorului să apese un buton pentru a controla LED-ul.</li>
+          </ul>
+      
+          <h3>Cum funcționează:</h3>
+          <ol>
+            <li><strong>Configurare Wi-Fi:</strong> Placa ESP se conectează la rețeaua Wi-Fi locală, obținând o adresă IP unică.</li>
+            <li><strong>Server Web:</strong> Placa ESP servește o pagină web simplă care conține un buton pentru controlul LED-ului.</li>
+            <li><strong>Comutare LED:</strong> Când utilizatorul apasă pe buton, un semnal este trimis către placa ESP care, la rândul ei, activează sau dezactivează tranzistorul, aprinzând sau stingând LED-ul.</li>
+            <li><strong>Control de la distanță:</strong> Utilizatorul poate accesa interfața web de pe orice dispozitiv conectat la aceeași rețea Wi-Fi și poate controla LED-ul din orice locație.</li>
+          </ol>
+      
+          <h3>Beneficii și aplicații:</h3>
+          <ul>
+            <li><strong>Control la distanță:</strong> Proiectul oferă posibilitatea de a controla un dispozitiv de la distanță, fiind un exemplu simplu de automatizare a locuinței.</li>
+            <li><strong>Ușor de implementat:</strong> Placa ESP și tranzistorul sunt ușor de integrat într-o multitudine de proiecte care necesită control la distanță al dispozitivelor electronice.</li>
+            <li><strong>Extensibilitate:</strong> Proiectul poate fi extins pentru a controla mai multe LED-uri sau chiar alte dispozitive electrice prin adăugarea mai multor circuite de control.</li>
+          </ul>
+      
+          <p>Acest proiect este un exemplu excelent de cum se pot folosi plăcile ESP pentru a crea soluții de automatizare accesibile și eficiente pentru aplicații de zi cu zi.</p>
+        </div>
+      </section>
+      
+    </div>
+    </section>
+
+    <section id="galerie" class="gallery-section">
+        <div class="container">
+          <h2 class="text-center mb-4">Video</h2>
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <div class="gallery-item text-center">
+                <video style="width: 400px;" controls class="rounded-3 shadow">
+                  <source src="video/site_led.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+    
+  <!-- FOOTER -->
+  <footer class="site-footer mt-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 contact-info">
+          <h5>Contact</h5>
+          <p>Email: rob.3d@yahoo.com</p>
+          <p>Oradea, România</p>
+        </div>
+        
+        <div class="col-md-6 social-media">
+          <h5>Social Media</h5>
+          <p>
+            <a href="https://www.tiktok.com/@rob.3d" target="_blank">
+              <i class="fab fa-tiktok"></i> TikTok
+            </a> |
+            <a href="https://www.instagram.com/rob__3d" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-3">
+        &copy; 2025 Rob3D. Toate drepturile rezervate.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

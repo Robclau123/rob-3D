@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rob3D - Proiecte și Imprimante 3D</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fișierul tău CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-transparent.png" alt="Rob3D Logo" style="margin-left: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link" href="proiecte-arduino.html">Proiecte</a></li>
+          <li class="nav-item"><a class="nav-link" href="3D.html">Printare 3D</a></li>
+          <li class="nav-item"><a class="nav-link" href="cercetare-carte.html">Cercetare</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="story-section">
+    <div class="text-box">
+      <h2>Introducere</h2>
+      <p>
+        Explorarea necunoscutului și documentarea cunoștințelor au fost mereu esențiale în drumul meu. Fie că este vorba de proiecte 3D, sisteme inteligente sau tehnologii viitoare, am simțit nevoia să aprofundez conceptele și să le explic mai departe într-un mod clar, aplicabil. De aceea, am început să documentez rezultatele muncii mele sub formă de cărți, lucrări și articole. Aici vei găsi o colecție de idei, cercetări și explicații despre tot ce m-a pasionat: de la motoare ionice și case inteligente, până la imprimare 3D și proiecte cu Arduino. Sper ca aceste resurse să-i inspire și pe alții să creeze, să experimenteze și să inoveze!
+        </p>
+      <!-- Butonul pentru "Află mai multe" -->
+      <div class="learn-more-btn-container">
+        <a href="#proiecte" class="learn-more-btn">Află mai multe</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="proiecte" class="projects-section">
+
+    <!-- Proiect 1: Carte Arduino -->
+    <div class="project" id="carte-arduino">
+      <h3>Carte Demo Arduino</h3>
+      <p>În cadrul cercetărilor mele, am explorat soluții inovatoare în domenii precum automatizarea locuinței și dezvoltarea unui motor ionic, contribuind la înțelegerea și aplicarea unor tehnologii moderne.</p>
+  
+      <div class="card mt-3 p-3 shadow-sm">
+        <h5>📘 Cartea demo: „Primii pași în Arduino”</h5>
+        <p>Am scris această carte în timpul pandemiei, din dorința de a împărtăși ce știam. A fost un proiect spontan, realizat în doar trei zile, așa că e posibil să conțină mici greșeli. Totuși, cred că este utilă celor care vor să facă primii pași în lumea Arduino!</p>
+        <a class="btn btn-primary" href="cercetare/arduino-book.pdf" download>
+          <i class="fas fa-download"></i> Descarcă PDF
+        </a>
+      </div>
+    </div>
+  
+    <!-- Proiect 2: Casă inteligentă -->
+    <div class="project" id="casa-inteligenta">
+      <h3>Casă Inteligentă</h3>
+      <p>În cadrul lucrării mele de licență, am realizat un proiect aplicat care combină electronică, programare și design 3D: o casă inteligentă în miniatură, capabilă să reacționeze automat la mediu și să fie controlată de la distanță.</p>
+  
+      <div class="card mt-3 p-3 shadow-sm">
+        <h5>🏠 Lucrare de licență: „Casă inteligentă – Automatizare și eficiență energetică”</h5>
+        <p>Am integrat senzori, actuatori și un microcontroller pentru a automatiza funcții precum iluminatul, ventilația și siguranța. Totul a fost integrat într-o machetă printată 3D. Scopul a fost să arăt cum pot contribui sistemele smart home la economisirea energiei și la creșterea confortului.</p>
+        <a class="btn btn-primary" href="cercetare/smart-house.pdf" download>
+          <i class="fas fa-download"></i> Descarcă PDF
+        </a>
+      </div>
+    </div>
+  
+    <!-- Proiect 3: Studiu pompe de căldură -->
+    <div class="project" id="pompa-caldura">
+      <h3>📘 Studiu: Pompe de căldură & energie solară</h3>
+      <p>În contextul actual, unde sustenabilitatea este esențială, acest studiu analizează utilizarea pompelor de căldură alimentate de panouri fotovoltaice, ca soluție ecologică pentru încălzirea locuințelor.</p>
+  
+      <div class="card mt-3 p-3 shadow-sm">
+        <h5>🎯 Obiectivul studiului</h5>
+        <p>Am analizat o configurație care să permită funcționarea unei pompe aer-apă doar cu energia generată de panouri fotovoltaice conectate la rețea. Am urmărit echilibrul dintre consum și producție de energie, în special în sezonul rece.</p>
+        <a class="btn btn-primary" href="cercetare/proiect_vorbit.pdf" download>
+          <i class="fas fa-download"></i> Descarcă PDF
+        </a>
+      </div>
+    </div>
+  
+    <!-- Proiect 4: Motor ionic -->
+    <div class="project" id="motor-ionic">
+      <h3>Motorul Ionic</h3>
+      <p>În lucrarea mea de disertație, am explorat posibilitatea realizării unui motor ionic funcțional, inspirat din tehnologiile de propulsie spațială. Proiectul a fost o provocare tehnică și o oportunitate de a combina electronică, design 3D și fenomene de înaltă tensiune.</p>
+  
+      <div class="card mt-3 p-3 shadow-sm">
+        <h5>🚀 Disertație: „Motor ionic – Propulsie electrică în vid”</h5>
+        <p>Motorul funcționează prin accelerarea ionilor între două bare de cupru, folosind un fir subțire pentru a crea un câmp electric intens. Am investigat fenomene precum descărcarea coronară și am testat multiple configurații pentru a obține propulsie vizibilă și stabilă.</p>
+        <p>Proiectul a fost realizat cu componente reciclate, iar procesul a inclus multe măsurători și testări. Dacă vrei să afli mai multe, descarcă documentul complet apăsând pe butonul de mai jos.</p>
+        <a class="btn btn-primary" href="cercetare/motor-ionic.pdf" download>
+          <i class="fas fa-download"></i> Descarcă PDF
+        </a>
+      </div>
+    </div>
+  
+  </section>
+  
+  
+  <!-- Bootstrap JS (pentru funcționarea meniului pe mobil) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // JavaScript pentru scroll
+    document.querySelector('.learn-more-btn').addEventListener('click', function(e) {
+      e.preventDefault(); // Previi comportamentul implicit al linkului
+      window.scrollTo({
+        top: document.querySelector('#proiecte').offsetTop, // Scroll la secțiunea de proiecte
+        behavior: 'smooth' // Scroll lin
+      });
+    });
+  </script>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-info">
+          <h5>Contact</h5>
+          <p>Email: rob.3d@yahoo.com</p>
+          <p>Oradea, România</p>
+        </div>
+        
+        <div class="social-media">
+          <h5>Social Media</h5>
+          <p>
+            <a href="https://www.tiktok.com/@rob.3d" target="_blank">
+              <i class="fab fa-tiktok"></i> TikTok
+            </a> |
+            <a href="https://www.instagram.com/rob__3d" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </p>
+        </div>
+        
+      </div>
+      <div class="copyright">
+        &copy; 2025 Rob3D. Toate drepturile rezervate.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

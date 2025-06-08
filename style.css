@@ -1,3 +1,4 @@
+
 /* Navbar cu turcoaz */
 .navbar {
   background-color: #038C8C !important;
@@ -5,25 +6,25 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Asigură-te că navbar-ul rămâne deasupra altor elemente */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adaugă o umbră subtilă pentru navbar */
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Adaugă padding în partea de sus a body-ului pentru a face loc navbar-ului */
+/* Body adjustments */
 body {
-  padding-top: 80px; /* Ajustează această valoare în funcție de înălțimea navbar-ului */
+  padding-top: 80px;
   margin: 0;
   background-color: #ffffff;
   color: #1D1D1D;
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Logo puțin mai mare */
+/* Logo adjustments */
 .navbar-brand img {
   height: 80px;
 }
 
-/* Asigură-te că navbar-ul folosește toată lățimea și alinierea corectă */
+/* Navbar navigation */
 .navbar-nav {
   display: flex;
   justify-content: flex-end;
@@ -33,7 +34,7 @@ body {
   padding-right: 0;
 }
 
-/* Link-uri albe în navbar */
+/* Navigation links */
 .navbar .nav-link {
   color: #ffffff !important;
   padding: 12px 25px;
@@ -43,23 +44,23 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Hover - schimbă culoarea textului și fundalul */
 .navbar .nav-link:hover {
   background-color: #F6C106;
   color: #1D1D1D !important;
   transform: scale(1.1);
 }
 
-/* Buton hamburger pe mobil (culoare albă) */
+/* Hamburger menu */
 .navbar-toggler {
   border: none;
+  padding: 4px 8px;
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Secțiunea Povestea Mea */
+/* Story section */
 .story-section {
   background-color: #f2f2f2;
   height: auto;
@@ -69,7 +70,7 @@ body {
   padding: 60px 20px 20px 20px;
 }
 
-/* Containerul pentru poveste */
+/* Text box container */
 .text-box {
   text-align: center;
   background-color: white;
@@ -82,14 +83,12 @@ body {
   position: relative;
 }
 
-/* Stiluri pentru titlu */
 .text-box h2 {
   font-size: 2rem;
   color: #038C8C;
   margin-bottom: 20px;
 }
 
-/* Stiluri pentru paragrafe */
 .text-box p {
   font-size: 1.1rem;
   color: #333;
@@ -97,7 +96,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Buton pentru a afla mai multe */
+/* Overlay button */
 .overlay-button {
   position: absolute;
   bottom: 20px;
@@ -119,7 +118,7 @@ body {
   color: #1D1D1D;
 }
 
-/* Buton "Află mai multe" */
+/* Learn more button */
 .learn-more-btn-container {
   margin-top: 10px;
   display: flex;
@@ -143,7 +142,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Secțiune de proiecte */
+/* Projects section */
 .projects-section {
   display: flex;
   justify-content: space-around;
@@ -153,7 +152,7 @@ body {
   margin-bottom: 0;
 }
 
-/* Fiecare proiect */
+/* Individual project cards */
 .project {
   background-color: white;
   padding: 30px;
@@ -182,7 +181,6 @@ body {
   line-height: 1.6;
 }
 
-/* Adăugarea butonului în secțiunile de proiecte */
 .project .learn-more-btn-container {
   margin-top: 15px;
 }
@@ -254,9 +252,229 @@ body {
   padding-top: 15px;
 }
 
-/* Container personalizat pentru a limita lățimea */
+/* Custom container */
 .custom-container {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Gallery section improvements */
+.gallery-section {
+  padding: 40px 20px;
+}
+
+.gallery-image {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+/* MOBILE RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  /* Navbar mobile adjustments */
+  body {
+    padding-top: 70px;
+  }
+  
+  .navbar-brand img {
+    height: 60px;
+    margin-left: 20px !important;
+  }
+  
+  .navbar-collapse {
+    background-color: #038C8C;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 15px;
+  }
+  
+  .navbar .nav-link {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 5px 0;
+    border-radius: 6px;
+  }
+  
+  /* Story section mobile */
+  .story-section {
+    padding: 40px 15px 20px 15px;
+  }
+  
+  .text-box {
+    width: 95%;
+    padding: 25px 20px;
+  }
+  
+  .text-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+  
+  .text-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Projects section mobile */
+  .projects-section {
+    padding: 20px 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project {
+    width: 95%;
+    margin: 10px 0;
+    padding: 20px 15px;
+  }
+  
+  .project h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .project p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* Buttons mobile */
+  .learn-more-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer mobile */
+  .site-footer {
+    padding: 30px 15px 15px 15px;
+    text-align: center;
+  }
+  
+  .site-footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .site-footer .contact-info,
+  .site-footer .social-media {
+    margin-bottom: 20px;
+  }
+  
+  .site-footer h5 {
+    font-size: 1.1rem;
+  }
+  
+  .site-footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Gallery mobile adjustments */
+  .gallery-section {
+    padding: 30px 15px;
+  }
+  
+  .gallery-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Video responsive */
+  video {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Image responsive */
+  .gallery-section img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Modal improvements for mobile */
+  .modal-dialog {
+    margin: 10px;
+  }
+  
+  .modal-content {
+    border-radius: 8px;
+  }
+  
+  /* Overlay button mobile */
+  .overlay-button {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects-section {
+    padding: 30px 25px;
+  }
+  
+  .project {
+    width: 45%;
+    margin: 15px;
+  }
+  
+  .text-box {
+    width: 90%;
+    padding: 35px;
+  }
+  
+  .navbar-brand img {
+    margin-left: 30px !important;
+  }
+}
+
+/* Large mobile (landscape) adjustments */
+@media (max-width: 480px) {
+  .text-box h2 {
+    font-size: 1.4rem;
+  }
+  
+  .text-box p {
+    font-size: 0.9rem;
+  }
+  
+  .project h3 {
+    font-size: 1.2rem;
+  }
+  
+  .project p {
+    font-size: 0.9rem;
+  }
+  
+  .learn-more-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+  
+  .navbar-brand img {
+    height: 50px;
+    margin-left: 10px !important;
+  }
+}
+
+/* Ensure touch targets are large enough for mobile */
+@media (max-width: 768px) {
+  .nav-link,
+  .learn-more-btn,
+  .btn {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Improve spacing for better touch interaction */
+  .navbar-nav .nav-item {
+    margin: 2px 0;
+  }
 }
